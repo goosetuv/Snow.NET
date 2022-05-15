@@ -35,7 +35,11 @@ The easist method for getting started would be adding Snow.NET via NuGet Package
 ---
 
 # Packages
-Package pending NuGet approval.
+You can get the latest version of Snow.NET via NuGet.
+
+**NuGet Package:** https://www.nuget.org/packages/Snow.NET
+
+This is the easist and fastest method of using the package.
 
 ---
 # Examples
