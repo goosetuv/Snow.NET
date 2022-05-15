@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9CEBAF5D-E3B0-4317-B8D4-3B9C373B7A35}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Goosetuv.Snow.NET</RootNamespace>
+    <AssemblyName>Goosetuv.Snow.NET</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=107.3.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.107.3.0\lib\netstandard2.0\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.5.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.5.0.0\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Agreement\Agreement.cs" />
+    <Compile Include="Classes\Agreement\AgreementComputers.cs" />
+    <Compile Include="Classes\Agreement\AgreementLicenses.cs" />
+    <Compile Include="Classes\Agreement\AgreementMobileDevices.cs" />
+    <Compile Include="Classes\Agreement\AgreementObjects.cs" />
+    <Compile Include="Classes\Agreement\Agreements.cs" />
+    <Compile Include="Classes\Agreement\AgreementSubAgreements.cs" />
+    <Compile Include="Classes\Agreement\AgreementType.cs" />
+    <Compile Include="Classes\Agreement\AgreementTypes.cs" />
+    <Compile Include="Classes\Application\Application.cs" />
+    <Compile Include="Classes\Application\ApplicationComputers.cs" />
+    <Compile Include="Classes\Application\ApplicationLicense.cs" />
+    <Compile Include="Classes\Application\ApplicationsAllowList.cs" />
+    <Compile Include="Classes\Application\ApplicationCompliance.cs" />
+    <Compile Include="Classes\Application\ApplicationsDenyList.cs" />
+    <Compile Include="Classes\Application\Applications.cs" />
+    <Compile Include="Classes\Application\ApplicationsOverlicensed.cs" />
+    <Compile Include="Classes\Application\ApplicationsUnderlicensed.cs" />
+    <Compile Include="Classes\Application\ApplicationUsers.cs" />
+    <Compile Include="Classes\Computer\Computer.cs" />
+    <Compile Include="Classes\Computer\ComputerApplications.cs" />
+    <Compile Include="Classes\Computer\Computers.cs" />
+    <Compile Include="Classes\Computer\ComputerObjects.cs" />
+    <Compile Include="Classes\Computer\ComputerUsers.cs" />
+    <Compile Include="Classes\Computer\ComputerVirtualMachines.cs" />
+    <Compile Include="Classes\DataCenterCluster\DataCenterCluster.cs" />
+    <Compile Include="Classes\DataCenterCluster\DataCenterClusters.cs" />
+    <Compile Include="Classes\DataCenterCluster\DataCenterClusterHosts.cs" />
+    <Compile Include="Classes\DataCenterCluster\DataCenterClusterLicenses.cs" />
+    <Compile Include="Classes\License\License.cs" />
+    <Compile Include="Classes\License\LicenseBaseLicenses.cs" />
+    <Compile Include="Classes\License\Licenses.cs" />
+    <Compile Include="Classes\License\LicenseUpgradingLicenses.cs" />
+    <Compile Include="Classes\License\LicenseVirtualMachines.cs" />
+    <Compile Include="Classes\MobileDevice\MobileDevices.cs" />
+    <Compile Include="Classes\Object\Object.cs" />
+    <Compile Include="Classes\Object\ObjectType.cs" />
+    <Compile Include="Classes\Object\ObjectTypeObjects.cs" />
+    <Compile Include="Classes\Object\ObjectTypes.cs" />
+    <Compile Include="Classes\Platform\Customers.cs" />
+    <Compile Include="Classes\Platform\DataUpdateJob.cs" />
+    <Compile Include="Classes\Platform\Platform.cs" />
+    <Compile Include="Classes\Platform\SystemUser.cs" />
+    <Compile Include="Classes\User\User.cs" />
+    <Compile Include="Classes\User\UserApplications.cs" />
+    <Compile Include="Classes\User\UserComputers.cs" />
+    <Compile Include="Classes\User\UserMobileDevices.cs" />
+    <Compile Include="Classes\User\UserObjects.cs" />
+    <Compile Include="Classes\User\Users.cs" />
+    <Compile Include="Enums\AssignmentType.cs" />
+    <Compile Include="Enums\ComputerStatus.cs" />
+    <Compile Include="Enums\CustomFieldDataType.cs" />
+    <Compile Include="Enums\DataUpdateJobState.cs" />
+    <Compile Include="Enums\MetricType.cs" />
+    <Compile Include="Enums\OperatingSystemType.cs" />
+    <Compile Include="Enums\UserStatus.cs" />
+    <Compile Include="Methods\AgreementData.cs" />
+    <Compile Include="Methods\ApplicationData.cs" />
+    <Compile Include="Methods\Authenticate.cs" />
+    <Compile Include="Methods\ComputerData.cs" />
+    <Compile Include="Methods\DataCenterClusterData.cs" />
+    <Compile Include="Methods\LicenseData.cs" />
+    <Compile Include="Methods\ObjectData.cs" />
+    <Compile Include="Methods\PlatformData.cs" />
+    <Compile Include="Methods\UserData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
