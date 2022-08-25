@@ -23,7 +23,7 @@ You should be able to restore the package dependencies when opening the source i
 ---
 
 # Issues and Contributions
-Do you want to report a bug? [Create an issue](https://github.com/goosetuv/Goosetuv.SnowNET/issues/new)
+Do you want to report a bug? [Create an issue](https://github.com/goosetuv/Snow.NET/issues/new)
 
 Do you want to contribute? Fork and push a pull request. :)
 
