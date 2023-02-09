@@ -1,7 +1,7 @@
 # Goosetuv.Snow.NET
 .NET Framework API Wrapper for Snow License Manager 9.
 
-[![Snow License Manager](https://img.shields.io/badge/Snow%20License%20Manager-9.20-f39f37?style=flat-square)](https://snowsoftware.com/current-product-versions)
+[![Snow License Manager](https://img.shields.io/badge/Snow%20License%20Manager-9.25-f39f37?style=flat-square)](https://snowsoftware.com/current-product-versions)
 [![License](https://img.shields.io/github/license/goosetuv/snow.net?style=flat-square)](https://github.com/goosetuv/Snow.NET/blob/main/LICENSE)
 
 # Features
